@@ -10,7 +10,7 @@
 
 
     <properties>
-        <environment>${environment}</environment>
+        <env>${env}</env>
     </properties>
 
     <dependencies>
