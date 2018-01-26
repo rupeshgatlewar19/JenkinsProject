@@ -12,6 +12,7 @@ public class TestOne {
     @Test
     @Parameters("browser")
     public void methodOne(String browser, ITestContext itc) {
+        System.out.println("Enviroment : " +System.getProperty("environment"));
         System.out.println(browser);
         System.out.println(itc.getSuite().getName());
         System.out.println(itc.getCurrentXmlTest().getAllParameters());
