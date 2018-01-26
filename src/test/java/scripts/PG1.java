@@ -3,11 +3,14 @@ package scripts;
 /**
  * Created by Rupesh Kumar on 1/27/2018.
  */
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+
+import java.net.URL;
 
 //comment the above line and uncomment below line to use Chrome
 //import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +22,13 @@ public class PG1 {
     public void testOne() throws Exception {
         // declaration and instantiation of objects/variables
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
+        System.out.println(" Executing on Chrome");
+        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        DesiredCapabilities cap = DesiredCapabilities.chrome();
+        cap.setBrowserName("chrome");
+
+        driver = new RemoteWebDriver(new URL(Node), cap);
         //comment the above 2 lines and uncomment below 2 lines to use Chrome
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
@@ -55,7 +64,12 @@ public class PG1 {
     public void testTwo() throws Exception {
         // declaration and instantiation of objects/variables
         System.setProperty("webdriver.firefox.marionette",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        //driver = new FirefoxDriver();
+        System.out.println(" Executing on Firefox");
+        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        DesiredCapabilities cap = DesiredCapabilities.firefox();
+        cap.setBrowserName("firefox");
+        driver = new RemoteWebDriver(new URL(Node), cap);
         //comment the above 2 lines and uncomment below 2 lines to use Chrome
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
@@ -91,7 +105,12 @@ public class PG1 {
     public void testThree() throws Exception {
         // declaration and instantiation of objects/variables
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
+        System.out.println(" Executing on Chrome");
+        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        DesiredCapabilities cap = DesiredCapabilities.chrome();
+        cap.setBrowserName("chrome");
+        driver = new RemoteWebDriver(new URL(Node), cap);
         //comment the above 2 lines and uncomment below 2 lines to use Chrome
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
@@ -127,7 +146,12 @@ public class PG1 {
     public void testFour() throws Exception {
         // declaration and instantiation of objects/variables
         System.setProperty("webdriver.firefox.marionette",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        //driver = new FirefoxDriver();
+        System.out.println(" Executing on Firefox");
+        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        DesiredCapabilities cap = DesiredCapabilities.firefox();
+        cap.setBrowserName("firefox");
+        driver = new RemoteWebDriver(new URL(Node), cap);
         //comment the above 2 lines and uncomment below 2 lines to use Chrome
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
