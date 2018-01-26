@@ -7,9 +7,6 @@
         <parameter name="browser" value="chrome-test" />
         <classes>
             <class name="scripts.TestOne">
-                <methods>
-                    <include name="methodOne"/>
-                </methods>
             </class>
         </classes>
     </test>
