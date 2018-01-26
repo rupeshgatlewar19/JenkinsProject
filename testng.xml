@@ -6,7 +6,7 @@
     <test name="TestOne">
         <parameter name="browser" value="chrome-test" />
         <classes>
-            <class name="scripts.TestOne">
+            <class name="scripts.PG1">
             </class>
         </classes>
     </test>
