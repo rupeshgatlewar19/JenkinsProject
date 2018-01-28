@@ -24,7 +24,7 @@ public class PG1 {
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
         //driver = new ChromeDriver();
         System.out.println(" Executing on Chrome");
-        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        String Node = "http://ec2-13-127-145-170.ap-south-1.compute.amazonaws.com:4545/wd/hub";
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setBrowserName("chrome");
 
@@ -66,7 +66,7 @@ public class PG1 {
         System.setProperty("webdriver.firefox.marionette",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
         //driver = new FirefoxDriver();
         System.out.println(" Executing on Firefox");
-        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        String Node = "http://ec2-13-127-145-170.ap-south-1.compute.amazonaws.com:4545/wd/hub";
         DesiredCapabilities cap = DesiredCapabilities.firefox();
         cap.setBrowserName("firefox");
         driver = new RemoteWebDriver(new URL(Node), cap);
@@ -107,7 +107,7 @@ public class PG1 {
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
         //driver = new ChromeDriver();
         System.out.println(" Executing on Chrome");
-        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        String Node = "http://ec2-13-127-145-170.ap-south-1.compute.amazonaws.com:4545/wd/hub";
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setBrowserName("chrome");
         driver = new RemoteWebDriver(new URL(Node), cap);
@@ -148,7 +148,7 @@ public class PG1 {
         System.setProperty("webdriver.firefox.marionette",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
         //driver = new FirefoxDriver();
         System.out.println(" Executing on Firefox");
-        String Node = "http://ec2-13-126-224-177.ap-south-1.compute.amazonaws.com:4545/wd/hub";
+        String Node = "http://ec2-13-127-145-170.ap-south-1.compute.amazonaws.com:4545/wd/hub";
         DesiredCapabilities cap = DesiredCapabilities.firefox();
         cap.setBrowserName("firefox");
         driver = new RemoteWebDriver(new URL(Node), cap);
